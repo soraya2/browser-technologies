@@ -5,24 +5,33 @@
 		<title>Document</title>
 	<style>
 
-		img{
-			width: 50%;
+		img, video{
+			width: 45%;
+			margin:0.2rem;
+			float: left;
 		}
+
+/*		@supports(display: flex){
+			body{
+				display: flex;
+			}
+
+			img, video{
+				width: 100%;
+				float: left;
+			}
+		}*/
 
 	</style>
 	</head>
 	<body>
 
-<!-- 	<picture>
-		<source srcset="./flower.webp">
+	<picture>
 		<source srcset="./flower.jpg">
+		<source srcset="./flower.webp">
 		<img src="./flower.jpg">
-	</picture> -->
-<!-- <picture> -->
-<!--   <source media="(min-width: 650px)" srcset="./flower.webp"> -->
-<!--   <source media="(min-width: 465px)" srcset="./flower.jpg">
-  <img src="./flower.jpg" alt="Flowers" style="width:auto;">
-</picture> -->
+	</picture>
+
 
     <video controls>
         <source src="./CMDA_V2_Datavisualisatie.mp4" type="video/mp4">
