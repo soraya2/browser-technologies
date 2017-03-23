@@ -1,5 +1,4 @@
 function es5function() {
-	console.log("boring es5 function");
+	console.log("e5 script loaded");
 }
-
 es5function()
