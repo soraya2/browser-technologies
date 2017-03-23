@@ -48,7 +48,7 @@
 	      throw new TypeError("expected function");
 	    }
 
-	    else if( fn.caller === null) {
+	    else if( fn.caller !== null) {
 	        console.log(fn.caller);// expected to throw
 	      console.log('false');
 	        return false;
