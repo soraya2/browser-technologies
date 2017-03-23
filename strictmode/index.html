@@ -12,6 +12,7 @@
 
 		body{
 			font-family: 'arial', 'sans-serif';
+			font-size: 1.5em;
 		  padding: 1em;
 		}
 
@@ -19,7 +20,7 @@
 </head>
 <body>
 
-<p id="paragraph">Turn javascript on to see if your browser suppport es6</p>
+<h1 id="paragraph">Turn javascript on to see if your browser suppport es6</h1>
 
 <div id="script" ></div>
 
@@ -69,13 +70,13 @@
 
  (function() {
     var script = document.createElement("script");
-    var paragraph = document.querySelector("p");
+    var paragraph = document.querySelector("h1");
     script.type = "text/javascript";
 	  try {
 	  	//check to see if es6 works
 	    new Function("(b = 2) => b");
 
-	    paragraph.innerHTML = "Yeah!! You support es6";
+	    paragraph.innerHTML = "Yeah!! Your browser supports es6";
 
 	    script.src = "./es6script.js" ;
 	    document.getElementById("script").appendChild(script);
@@ -84,7 +85,7 @@
 	  }
 	  catch (err) {
 	  	//load es5 if its not support
-	  	paragraph.innerHTML = "Well at least you support es5 ;)";
+	  	paragraph.innerHTML = "Well at least your browser supports es5 ;)";
 	  	script.src = "./es5script.js" ;
 	    document.getElementById("script").appendChild(script);
 
