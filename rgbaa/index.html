@@ -13,10 +13,16 @@
     html {
       font-family: 'arial', sans-serif;
     }
+
 		body {
 			display: inline-block;
-			display: flex;
 			padding:1em;
+		}
+
+		@supports(display: flex){
+			body {
+				display: flex;
+			}
 		}
 
 		div {
