@@ -62,10 +62,13 @@
 
 	function hello(){
 		'use stict';
-		console.log(v => v + 1);
+		if(v => v !== undefined){
+			console.log(v => v + 1);
+
+		}
 
 
-		var odds  = evens.map(v => v + 1);
+		// var odds  = evens.map(v => v + 1);
 
 
 	}
