@@ -39,6 +39,10 @@
   <p> - by Refsnes Data. All Rights Reserved.
   All content and graphics on this web site are the property of the company Refsnes Data.</p>
 </details>
+<!-- src="./es5script.js" -->
+<div id="script" ></div>
+
+</script>
 
 	<script type="text/javascript">
 
@@ -81,44 +85,32 @@
 	// }
 // check es6
 
-(function hello(){
-		'use stict';
-	try {
-		var test = () => 'e';
-    console.log(typeof test);
+
+ (function() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+	  try {
+	  	//check to see if es6 works
+	    new Function("(a = 0) => a");
+
+	    script.src = "./es6script.js" ;
+	    document.getElementById("script").appendChild(script);
 
 	    console.log('Your browser supports es6');
 	    return true;
-		}
-		// if (typeof test == "undefined"){
-  //     console.log('es6 is not supported');
-  //   }
-		// if(v => v !== undefined){
-		// 	console.log(v => v + 1);
-
-		// }
-  catch (err) {
+	  }
+	  catch (err) {
+	  	//load es5 if its not support
+	  	script.src = "./es5script.js" ;
+	    document.getElementById("script").appendChild(script);
 	  	console.log('Your browser does not support es6');
 	    return false;
 	  }
 	}());
 
-	// var supportsES6 = function() {
-	//   try {
-	//     new Function("(a = 0) => a");
-
-
-	//     console.log('Your browser supports es6');
-	//     return true;
-	//   }
-	//   catch (err) {
-	//   	console.log('Your browser does not support es6');
-	//     return false;
-	//   }
-	// }();
-
-/*credits
+/*credits es6 browser check
 	https://www.bram.us/2016/10/31/checking-if-a-browser-supports-es6/
+	https://gist.github.com/bendc/d7f3dbc83d0f65ca0433caf90378cd95
 	Bram(us) Van Damme
 */
 
