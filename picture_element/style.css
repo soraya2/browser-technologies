@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+body{
+  padding: 1em;
+}
+p{
+    display:none;
+}
+
+#paragraph:target{
+  display:block;
+}
+
+/* @supports (display: flex){
+  summary{
+    display:flex;
+    align-items: center;
+  }
+} */
+
+
+
