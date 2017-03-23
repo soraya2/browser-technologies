@@ -79,19 +79,49 @@
 
 
 	// }
+// check es6
 
-	var supportsES6 = function() {
-	  try {
-	    new Function("(a = 0) => a");
-	    console.log('true');
+(function hello(){
+		'use stict';
+	try {
+		var test = () => 'e';
+    console.log(typeof test);
+
+	    console.log('Your browser supports es6');
 	    return true;
-	  }
-	  catch (err) {
-	  	console.log('false');
+		}
+		// if (typeof test == "undefined"){
+  //     console.log('es6 is not supported');
+  //   }
+		// if(v => v !== undefined){
+		// 	console.log(v => v + 1);
+
+		// }
+  catch (err) {
+	  	console.log('Your browser does not support es6');
 	    return false;
 	  }
-	}();
-// hello();
+	}());
+
+	// var supportsES6 = function() {
+	//   try {
+	//     new Function("(a = 0) => a");
+
+
+	//     console.log('Your browser supports es6');
+	//     return true;
+	//   }
+	//   catch (err) {
+	//   	console.log('Your browser does not support es6');
+	//     return false;
+	//   }
+	// }();
+
+/*credits
+	https://www.bram.us/2016/10/31/checking-if-a-browser-supports-es6/
+	Bram(us) Van Damme
+*/
+
 
 
 	</script>
