@@ -62,16 +62,25 @@
 
 	function hello(){
 		'use stict';
-		if(v => v !== undefined){
-			console.log(v => v + 1);
+		var test = () => 'e';
+    console.log(typeof test);
 
-		}
+		if (typeof test == "undefined"){
+      console.log('es6 is not supported');
+    }
+		// if(v => v !== undefined){
+		// 	console.log(v => v + 1);
+
+		// }
+
 
 
 		// var odds  = evens.map(v => v + 1);
 
 
 	}
+
+hello();
 
 
 	</script>
