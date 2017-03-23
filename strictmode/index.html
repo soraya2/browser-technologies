@@ -20,7 +20,7 @@
 </head>
 <body>
 
-<h1 id="paragraph">Turn javascript on to see if your browser suppport es6</h1>
+<h1>Turn javascript on to see if your browser suppport es6</h1>
 
 <div id="script" ></div>
 
@@ -28,55 +28,18 @@
 
 	<script type="text/javascript">
 
-	// function isStrict(fn) {
-	//     console.log(fn);
-	//     if (typeof fn != "function"){
-	//       throw new TypeError("expected function");
-	//     }
-
-	//     else if( fn.caller !== null) {
-	//         console.log(fn.caller);// expected to throw
-	//       console.log('false');
-	//         return false;
-	//     } else {
-	//         console.log('true');
-	//         return true;
-	//     }
-	// 	}
-
-	// isStrict(hello);
-
-	// function hello(){
-	// 	'use stict';
-	// 	var test = () => 'e';
- //    console.log(typeof test);
-
-	// 	if (typeof test == "undefined"){
- //      console.log('es6 is not supported');
- //    }
-		// if(v => v !== undefined){
-		// 	console.log(v => v + 1);
-
-		// }
-
-
-
-		// var odds  = evens.map(v => v + 1);
-
-
-	// }
 // check es6
-
-
  (function() {
     var script = document.createElement("script");
     var paragraph = document.querySelector("h1");
     script.type = "text/javascript";
 	  try {
-	  	//check to see if es6 works
+	  	/*Check to see if es6 works. Your checking if the default parameter can be set. All browsers that support e6 do*/
+
+	  	// Bram(us) Van Damme
 	    new Function("(b = 2) => b");
 
-	    paragraph.innerHTML = "Yeah!! Your browser supports es6";
+	    paragraph.innerHTML = "Yeah!! Your browser supports es6 :D";
 
 	    script.src = "./es6script.js" ;
 	    document.getElementById("script").appendChild(script);
