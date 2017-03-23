@@ -42,32 +42,32 @@
 
 	<script type="text/javascript">
 
-	function isStrict(fn) {
-	    console.log(fn);
-	    if (typeof fn != "function"){
-	      throw new TypeError("expected function");
-	    }
+	// function isStrict(fn) {
+	//     console.log(fn);
+	//     if (typeof fn != "function"){
+	//       throw new TypeError("expected function");
+	//     }
 
-	    else if( fn.caller !== null) {
-	        console.log(fn.caller);// expected to throw
-	      console.log('false');
-	        return false;
-	    } else {
-	        console.log('true');
-	        return true;
-	    }
-		}
+	//     else if( fn.caller !== null) {
+	//         console.log(fn.caller);// expected to throw
+	//       console.log('false');
+	//         return false;
+	//     } else {
+	//         console.log('true');
+	//         return true;
+	//     }
+	// 	}
 
-	isStrict(hello);
+	// isStrict(hello);
 
-	function hello(){
-		'use stict';
-		var test = () => 'e';
-    console.log(typeof test);
+	// function hello(){
+	// 	'use stict';
+	// 	var test = () => 'e';
+ //    console.log(typeof test);
 
-		if (typeof test == "undefined"){
-      console.log('es6 is not supported');
-    }
+	// 	if (typeof test == "undefined"){
+ //      console.log('es6 is not supported');
+ //    }
 		// if(v => v !== undefined){
 		// 	console.log(v => v + 1);
 
@@ -78,8 +78,17 @@
 		// var odds  = evens.map(v => v + 1);
 
 
-	}
+	// }
 
+	var supportsES6 = function() {
+	  try {
+	    new Function("(a = 0) => a");
+	    return true;
+	  }
+	  catch (err) {
+	    return false;
+	  }
+	}();
 hello();
 
 
