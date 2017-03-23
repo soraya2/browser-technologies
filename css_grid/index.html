@@ -1,125 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
 
-*{
-  box-sizing: boder-box;
-  margin:0;
-}
+      *{
+        box-sizing: boder-box;
+        margin:0;
+      }
 
-html{
-  font-family: 'arial', sans-serif;
-}
+      html{
+        font-family: 'arial', sans-serif;
+      }
 
+      main{
+      /*  white-space: nowrap;*/
+        margin: 0 auto;
+        width: 96vw;
+      }
 
+      section:nth-child(odd), section:nth-child(even){
+          width: 35%;
+      }
 
-main{
-/*  white-space: nowrap;*/
-  margin: 0 auto;
-  width: 96vw;
-}
+      section:nth-child(even){
+        background-color: #ffeead;
+      }
 
-section:nth-child(odd), section:nth-child(even){
-    width: 35%;
-}
+      section:nth-child(odd){
+        background-color: #ff6f69;
+      }
 
-section:nth-child(even){
-  background-color: #ffeead;
-}
+      section:first-of-type{
+         width: 40%;
+      }
 
-section:nth-child(odd){
-  background-color: #ff6f69;
-}
+      section:last-of-type{
+          width: 15%;
+      }
 
-section:first-of-type{
-   width: 40%;
-}
+      section{
+        vertical-align: top;
+        display: inline-block;
+        padding: 1em;
+        height:100%;
+        min-height: 15em;
+      }
 
-section:last-of-type{
-    width: 15%;
-}
+      @supports not (display: grid) {
 
-section{
-  vertical-align: top;
-  display: inline-block;
-  padding: 1em;
-  height:100%;
-  min-height: 15em;
-}
+        main{
+          white-space: initial;
+          display: flex;
+          height: 20em;
+        }
 
-/*@supports not (display: grid) {
+        section{
+           min-width: 15%;
+           max-width: 50%;
+        }
 
-  main{
-  	white-space: initial;
-    display: flex;
-    height: 20em;
-  }
+        section:first-child{
+           flex-grow: 2;
+        }
 
-  section{
-     min-width: 15%;
-     max-width: 50%;
-  }
+        section:nth-child(2){
+          flex-grow: 1.5;
+          background-color: #ffcc5c;
+        }
 
-  section:first-child{
-     flex-grow: 2;
-  }
+        section:nth-child(3){
+            flex-shrink: 0;
+        }
+      }
 
-  section:nth-child(2){
-    flex-grow: 1.5;
-    background-color: #ffcc5c;
-   }
+      @supports (display: grid) {
 
- section:nth-child(3){
-    flex-shrink: 0;
- }
-}
-*/
-/*@supports (display: grid) {
+        section:nth-child(odd), section:nth-child(even){
+          width: auto;
+        }
 
-  section:nth-child(odd), section:nth-child(even){
-    width: auto;
-  }
+        main{
+          white-space: initial;
+          height: 10em;
+          display: grid;
+          /* if you pass in 1 property the rule apply's for all colums but you can define it per column*/
+          grid-template-columns: 50% 35% auto;
+        }
+      }
 
-main{
-	 white-space: initial;
-   height: 10em;
-   display: grid;
-  /* if you pass in 1 property the rule apply's for all colums but you can define it per column*/
+    </style>
+  </head>
 
-/*  grid-template-columns: 50% 35% auto;
-  }*/
+  <body class="grid-container">
+    <main>
+      <section>
+         <p>
+           On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.
+         </p>
+     </section>
 
-/*}*/
+       <section>
+         <p>
+           On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.
+         </p>
+      </section>
 
-
-
-	</style>
-</head>
-<body>
-<body class="grid-container">
-  <main>
     <section>
-       <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.
-       </p>
-   </section>
-     <section>
-       <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.
-       </p>
-    </section>
-
-  <section>
-    <p>
-   At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-   </p>
-   </section>
-  </main>
-  <footer>
-  </footer>
-</body>
-
-
-</body>
+      <p>
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+      </p>
+     </section>
+    </main>
+  </body>
 </html>
