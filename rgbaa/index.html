@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+ <style>
+
+    * {
+      box-sizing: border-box;
+      margin:0;
+    }
+
+    html {
+      font-family: 'arial', sans-serif;
+    }
+		body {
+			display: inline-block;
+			display: flex;
+			padding:1em;
+		}
+
+		div {
+			width: 33%;
+			height: 3em;
+			margin: 0 .2em;
+			padding: .3rem;
+		}
+
+		.rgb {
+
+		  background-color: rgb(239, 82, 84);
+		  background-color: rgba(239, 82, 88, 0.90);
+			background-color: #ef5258ee;
+		}
+
+		.rgba {
+		  background-color: rgba(239, 82, 88, 0.90);
+		}
+
+		.rrggbbaa {
+			background-color: #ef5258ee;
+		}
+
+</style>
+</head>
+<body>
+	<div class="rgb"><p>Good old RGB rgb fallback rgb(239, 82, 84);</p></div>
+	<div class="rgba"><p> RGBA only rgba(239, 82, 88, 0.90)</p></div>
+	<div class="rrggbbaa"><p>RRGGBBAA only #ef5258ee</p></div>
+</body>
+</html>
