@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
 	<style>
 
 		*{
@@ -12,34 +11,16 @@
 		}
 
 		body{
+			font-family: 'arial', 'sans-serif';
 		  padding: 1em;
 		}
 
-		p{
-		    display:none;
-		}
-
-		#paragraph:target{
-		  display:block;
-		}
-
-		/* @supports (display: flex){
-		  summary{
-		    display:flex;
-		    align-items: center;
-		  }
-		} */
 	</style>
 </head>
 <body>
-<details>
-  <summary>
-     <h3>tr</3>
-  </summary>
-  <p> - by Refsnes Data. All Rights Reserved.
-  All content and graphics on this web site are the property of the company Refsnes Data.</p>
-</details>
-<!-- src="./es5script.js" -->
+
+<p id="paragraph">Turn javascript on to see if your browser suppport es6</p>
+
 <div id="script" ></div>
 
 </script>
@@ -88,21 +69,25 @@
 
  (function() {
     var script = document.createElement("script");
+    var paragraph = document.querySelector("p");
     script.type = "text/javascript";
 	  try {
 	  	//check to see if es6 works
-	    new Function("(a = 0) => a");
+	    new Function("(b = 2) => b");
+
+	    paragraph.innerHTML = "Yeah!! You support es6";
 
 	    script.src = "./es6script.js" ;
 	    document.getElementById("script").appendChild(script);
-
 	    console.log('Your browser supports es6');
 	    return true;
 	  }
 	  catch (err) {
 	  	//load es5 if its not support
+	  	paragraph.innerHTML = "Well at least you support es5 ;)";
 	  	script.src = "./es5script.js" ;
 	    document.getElementById("script").appendChild(script);
+
 	  	console.log('Your browser does not support es6');
 	    return false;
 	  }
