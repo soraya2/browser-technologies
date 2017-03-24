@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	 <style>
+
+	    * {
+	      box-sizing: border-box;
+	      margin:0;
+	    }
+
+	    html {
+	      font-family: 'arial', sans-serif;
+	    }
+
+			body {
+				display: block;
+
+				padding:1em;
+			}
+
+/*			@supports(display: flex){
+				body {
+					display: flex;
+				}
+			}
+/**/
+			div {
+				width: 30%;
+				float: left;
+				height: 3em;
+				margin: 0 .2em;
+				padding: .3rem;
+			}*/
+
+			.rgb {
+
+			  background-color: rgb(239, 82, 84);
+			  background-color: rgba(239, 82, 88, 0.90);
+				background-color: #ef5258ee;
+			}
+
+			.rgba {
+			  background-color: rgba(239, 82, 88, 0.90);
+			}
+
+			.rrggbbaa {
+				background-color: #ef5258ee;
+			}
+
+	</style>
+	</head>
+	<body>
+			<p>You can remove me;)</p>
+			<button>remove paragraph</button>
+
+
+			<script type="text/javascript">
+					var button = document.querySelector('button');
+					var paragraph = document.querySelector('p');
+					var body = document.querySelector('body');
+
+					try{
+							button.addEventListener('click', removeParagraph);
+
+
+							function removeParagraph() {
+
+								paragraph.remove();
+								console.log("item removed with childNode.remove");
+							}
+
+					}catch(err){
+						console.log(err);
+
+						button.addEventListener('click', removeParagraph);
+
+
+							function removeParagraph() {
+
+								body.removeChild(paragraph);
+										console.log("item removed with removeChild");
+							}
+
+
+					}
+
+
+			</script>
+
+	</body>
+</html>
