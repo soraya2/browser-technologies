@@ -1,5 +1,5 @@
 #feature detection (progressive enhancement)
-all features are tested in the newest version of chrome, safari and firefox and have a fallback for IE9.
+all features are tested in the newest version of Chrome, Safari Firefox Opera and have a fallback for IE9.
 I made sure that the user is able to see a simular experience on every browser.
 
 ## Table of contents
@@ -24,9 +24,8 @@ https://soraya2.github.io/browser-technologies/css_grid/
 ### basic styling with floats for IE9
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/display_inline.jpg)
 
-
 ### CSS grid fallback with feature detection flexbox in Firefox
-![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/flex_box.jpg)
+![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/flexbox.jpg)
 
 
 ### CSS grid with feature detection in Chrome
@@ -83,10 +82,10 @@ https://soraya2.github.io/browser-technologies/remove_node/
 ### support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/childnode_remove_suport.jpg)
 
-###Result in Chrome with element.removeChild(child)
+### Result in Chrome with element.removeChild(child)
 ![JS remove child-node](https://github.com/soraya2/browser-technologies/blob/master/screenshots/remove_chrome.jpg)
 
-###Result in IE9 with childNode.remove
+### Result in IE9 with childNode.remove
 ![JS remove child-node](https://github.com/soraya2/browser-technologies/blob/master/screenshots/remove_ie.jpg)
 
 
