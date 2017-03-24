@@ -21,7 +21,7 @@ https://soraya2.github.io/browser-technologies/css_grid/
 ### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/grid_support.jpg)
 
-### basic styling with floats for IE9
+### Basic styling with floats for IE9
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/display_inline.jpg)
 
 ### CSS grid fallback with feature detection flexbox in Firefox
