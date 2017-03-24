@@ -17,7 +17,7 @@ De styling starts with basic floats and if you support flexbox or css grid it wi
 
 ### Demo
 
-[CSS grid demo](#https://soraya2.github.io/browser-technologies/css_grid/)
+[CSS grid demo](https://soraya2.github.io/browser-technologies/css_grid/)
 ### Code
 [CSS grid code](https://github.com/soraya2/browser-technologies/blob/master/css_grid/index.html)
 
