@@ -25,29 +25,32 @@
 <div id="script" ></div>
 
 
-	<script type="text/javascript">
+<script type="text/javascript">
 
 // check es6
  (function() {
     var script = document.createElement("script");
     var paragraph = document.querySelector("h1");
     script.type = "text/javascript";
-	  try {
-	  	/*Check to see if es6 works. Your checking if the default parameter can be set. All browsers that support e6 do*/
 
-	  	// Bram(us) Van Damme
-	    new Function("(b = 2) => b");
+	  try {
+
+	  	/*Check to see if es6 works. Your checking if the default parameter can be set. All browsers that support e6 that accept default parameters accept es6*/
+	    new Function("(b = 2) => b");	// Bram(us) Van Damme
 
 	    paragraph.innerHTML = "Yeah!! Your browser supports es6 :D";
 
 	    script.src = "./es6script.js" ;
 	    document.getElementById("script").appendChild(script);
+
 	    console.log('Your browser supports es6');
 	    return true;
 	  }
+
 	  catch (err) {
 	  	//load es5 if its not support
 	  	paragraph.innerHTML = "Well at least your browser supports es5 ;)";
+
 	  	script.src = "./es5script.js" ;
 	    document.getElementById("script").appendChild(script);
 

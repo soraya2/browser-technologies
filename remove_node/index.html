@@ -1,91 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-	 <style>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
 
-	    * {
-	      box-sizing: border-box;
-	      margin:0;
-	    }
+        * {
+          box-sizing: border-box;
+          margin:0;
+        }
 
-	    html {
-	      font-family: 'arial', sans-serif;
-	    }
+        html {
+          font-family: 'arial', sans-serif;
+        }
 
-			body {
-				display: block;
-				padding:1em;
-			}
+        body {
+          display: block;
+          padding:1em;
+        }
 
-			p {
-				width: 30%;
-				height: 3em;
-				margin: 1em 0;
-				padding: 2rem;
-				color: #ffffff;
-				text-align: center;
-				vertical-align: middle;
-			  background-color: rgb(239, 82, 84);
-			}
+        p {
+          width: 30%;
+          height: 3em;
+          margin: 1em 0;
+          padding: 2rem;
+          color: #ffffff;
+          text-align: center;
+          vertical-align: middle;
+          background-color: rgb(239, 82, 84);
+        }
+    </style>
+  </head>
+  <body>
+      <p>You can remove me ;)</p>
+      <p>But not me :(</p>
+      <button>remove paragraph</button>
 
+      <script type="text/javascript">
+          var button = document.querySelector('button');
+          var paragraph = document.querySelector('p');
+          var body = document.querySelector('body');
+          var i = 0;
 
-	</style>
-	</head>
-	<body>
-			<p>You can remove me ;)</p>
-			<p>But not me :(</p>
-			<button>remove paragraph</button>
+          try{
+            button.addEventListener('click', removeParagraph);
 
+            function removeParagraph(e) {
 
-			<script type="text/javascript">
-					var button = document.querySelector('button');
-					var paragraph = document.querySelector('p');
-					var body = document.querySelector('body');
-					var i = 0;
+              if(i === 0){
 
-					try{
-							button.addEventListener('click', removeParagraph);
+                  console.log(paragraph);
 
+                  paragraph.remove();
 
-							function removeParagraph(e) {
+                  console.log("item removed with childNode.remove");
+                  i = 1;
+              }
+            }
+          }
+          catch(err){
+            console.log(err);
 
-								if(i === 0){
+            button.addEventListener('click', removeParagraph);
 
-									console.log(paragraph);
+              function removeParagraph() {
 
-									paragraph.remove();
+              if(i === 0){
 
-									console.log("item removed with childNode.remove");
-									i = 1;
+                  console.log(paragraph);
 
-								}
+                  body.removeChild(paragraph);
 
-							}
+                  console.log("item removed with removeChild");
 
-					}catch(err){
-						console.log(err);
+                  i = 1;
+              }
+            }
+          }
 
-						button.addEventListener('click', removeParagraph);
-
-							function removeParagraph() {
-
-							if(i === 0){
-
-									console.log(paragraph);
-
-									body.removeChild(paragraph);
-
-									console.log("item removed with removeChild");
-
-									i = 1;
-							}
-						}
-					}
-
-
-			</script>
-
-	</body>
+      </script>
+  </body>
 </html>

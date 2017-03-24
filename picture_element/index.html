@@ -1,42 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-	<style>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  <style>
 
-		img, video{
-			width: 45%;
-			margin:0.2rem;
-			float: left;
-		}
+    img, video{
+      width: 45%;
+      margin:0.2rem;
+      float: left;
+    }
 
-/*		@supports(display: flex){
-			body{
-				display: flex;
-			}
+  </style>
+  </head>
+  <body>
 
-			img, video{
-				width: 100%;
-				float: left;
-			}
-		}*/
+  <picture>
+    <source srcset="./flower.webp" type="image/webp">
+    <img alt="purple flower" src="./flower.jpg">
+  </picture>
 
-	</style>
-	</head>
-	<body>
-
-	<picture>
-		<source srcset="./flower.jpg">
-		<source srcset="./flower.webp">
-		<img src="./flower.jpg">
-	</picture>
-
-
-    <video controls>
-        <source src="./CMDA_V2_Datavisualisatie.mp4" type="video/mp4">
-        <source src="./CMDA_V2_Datavisualisatie.ogg" type="video/ogg">
-        <p><a href="./CMDA_V2_Datavisualisatie.WebM" download>Download de video hier</a></p>
-    </video>
-	</body>
+  </body>
 </html>
