@@ -78,7 +78,7 @@ https://github.com/soraya2/browser-technologies/blob/master/es6/index.html
 
 
 ### Test result in Chrome
-![JS support check ES6](https://github.com/soraya2/browser-technologies/blob/master/screenshots/es6checkchrome.jpg)
+![JS support check ES6](https://github.com/soraya2/browser-technologies/blob/master/screenshots/es6checkchrome2.jpg)
 
 
 
