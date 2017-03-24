@@ -10,7 +10,7 @@ I made sure that the user is able to see a simular experience on every browser.
 - [HTML video](#video)
 - [HTML picture element](#picture)
 
-![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/)
+
 
 ### <a name="grid"></a>CSS grid
 De styling starts with basic floats and if you support flexbox or css grid it will use that.
@@ -31,6 +31,7 @@ https://soraya2.github.io/browser-technologies/css_grid/
 
 ### CSS grid with feature detection in Chrome
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/css_grid.jpg)
+
 
 
 ### <a name="rrggbbaa"></a>CSS rrggbbaa
@@ -110,17 +111,18 @@ https://soraya2.github.io/browser-technologies/video_element/
 ### <a name="picture"></a>HTML picture element
 Picture element with img fallback and uses webp format if it's suported.
 
+
 ### Demo
 https://soraya2.github.io/browser-technologies/picture_element/
 
 ### support according to i use advise
-![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/)
+![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/picture_support.jpg)
 
 ### Result in Chrome
-![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/)
+![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/picture_chrome.jpg)
 
 ### Result in IE9
-![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/)
+![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/picture_ie.jpg)
 
 
 
