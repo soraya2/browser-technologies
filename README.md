@@ -118,7 +118,7 @@ https://github.com/soraya2/browser-technologies/blob/master/video_element/index.
 ![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/video_chrome.jpg)
 
 ### Result in IE9
-![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/video_ie9.jpg)
+![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/video_ie.jpg)
 
 
 
