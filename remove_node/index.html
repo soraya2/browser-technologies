@@ -61,17 +61,24 @@
 					var button = document.querySelector('button');
 					var paragraph = document.querySelector('p');
 					var body = document.querySelector('body');
+					var i = 0;
 
 					try{
 							button.addEventListener('click', removeParagraph);
 
 
 							function removeParagraph(e) {
-								e.preventDefault();
-								console.log(paragraph);
 
-								paragraph.remove();
-								console.log("item removed with childNode.remove");
+								if(i === 0){
+
+									console.log(paragraph);
+
+									paragraph.remove();
+
+									console.log("item removed with childNode.remove");
+									i = 1;
+
+								}
 
 							}
 
@@ -80,13 +87,19 @@
 
 						button.addEventListener('click', removeParagraph);
 
+							if(i === 0){
 
 							function removeParagraph() {
 
-								body.removeChild(paragraph);
-										console.log("item removed with removeChild");
-							}
+									console.log(paragraph);
 
+									body.removeChild(paragraph);
+
+									console.log("item removed with removeChild");
+
+									i = 1;
+							}
+						}
 
 					}
 
