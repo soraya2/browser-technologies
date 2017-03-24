@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
 
-		*{
+		* {
 		  margin:0;
 		  padding: 0;
 		}
 
-		body{
+		body {
+      
 			font-family: 'arial', 'sans-serif';
 			font-size: 1.5em;
 		  padding: 1em;
+      
 		}
 
 	</style>
-</head>
-<body>
+  </head>
+  <body>
 
-	<h1>Turn javascript on to see if your browser suppport es6</h1>
+    <h1>Turn javascript on to see if your browser suppport es6</h1>
 
-<div id="script" ></div>
+    <div id="script" ></div>
 
+    <script type="text/javascript">
 
-<script type="text/javascript">
+      // check es6
+       (function() {
+          var script = document.createElement("script");
+          var paragraph = document.querySelector("h1");
+          script.type = "text/javascript";
 
-// check es6
- (function() {
-    var script = document.createElement("script");
-    var paragraph = document.querySelector("h1");
-    script.type = "text/javascript";
+          try {
 
-	  try {
+            /*Check to see if es6 works. Your checking if the default parameter can be set. All browsers that support e6 that accept default parameters accept es6*/
+            new Function("(b = 2) => b");	// Bram(us) Van Damme
 
-	  	/*Check to see if es6 works. Your checking if the default parameter can be set. All browsers that support e6 that accept default parameters accept es6*/
-	    new Function("(b = 2) => b");	// Bram(us) Van Damme
+            paragraph.innerHTML = "Yeah!! Your browser supports es6 :D";
 
-	    paragraph.innerHTML = "Yeah!! Your browser supports es6 :D";
+            script.src = "./es6script.js" ;
+            document.getElementById("script").appendChild(script);
 
-	    script.src = "./es6script.js" ;
-	    document.getElementById("script").appendChild(script);
+            console.log('Your browser supports es6');
+            
+            return true;
+          }
 
-	    console.log('Your browser supports es6');
-	    return true;
-	  }
+          catch (err) {
+            //load es5 if its not support
+            paragraph.innerHTML = "Well at least your browser supports es5 ;)";
 
-	  catch (err) {
-	  	//load es5 if its not support
-	  	paragraph.innerHTML = "Well at least your browser supports es5 ;)";
+            script.src = "./es5script.js" ;
+            document.getElementById("script").appendChild(script);
 
-	  	script.src = "./es5script.js" ;
-	    document.getElementById("script").appendChild(script);
+            console.log('Your browser does not support es6');
+            
+            return false;
+          }
+        }());
 
-	  	console.log('Your browser does not support es6');
-	    return false;
-	  }
-	}());
-
-/*credits es6 browser check
-	https://www.bram.us/2016/10/31/checking-if-a-browser-supports-es6/
-	https://gist.github.com/bendc/d7f3dbc83d0f65ca0433caf90378cd95
-	Bram(us) Van Damme
-*/
-
-
-
-	</script>
-</body>
+         /*credits es6 arrow check
+        https://www.bram.us/2016/10/31/checking-if-a-browser-supports-es6/
+        https://gist.github.com/bendc/d7f3dbc83d0f65ca0433caf90378cd95
+        Bram(us) Van Damme*/
+  
+    </script>
+  </body>
 </html>
