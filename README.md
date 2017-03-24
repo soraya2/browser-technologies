@@ -21,7 +21,7 @@ https://soraya2.github.io/browser-technologies/css_grid/
 ### Code
 https://github.com/soraya2/browser-technologies/blob/master/css_grid/index.html
 
-### Support according to i use advise
+### Support according to i use
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/grid_support.jpg)
 
 ### Basic styling with floats for IE9
@@ -45,7 +45,7 @@ https://soraya2.github.io/browser-technologies/rrggbbaa/
 ### Code
 https://github.com/soraya2/browser-technologies/blob/master/rrggbbaa/index.html
 
-### Support according to i use advise
+### Support according to i use 
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/rrggbbaa_support.jpg)
 
 ### Test result in IE9
@@ -69,7 +69,7 @@ https://soraya2.github.io/browser-technologies/es6/
 ### Code
 https://github.com/soraya2/browser-technologies/blob/master/es6/index.html
 
-### Support according to i use advise
+### Support according to i use 
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/ed6arrow_support.jpg)
 
 
@@ -91,7 +91,7 @@ https://soraya2.github.io/browser-technologies/remove_node/
 ### Code
 https://github.com/soraya2/browser-technologies/tree/master/remove_node
 
-### Support according to i use advise
+### Support according to i use
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/childnode_remove_suport.jpg)
 
 ### Result in Chrome with element.removeChild(child)
@@ -111,7 +111,7 @@ https://soraya2.github.io/browser-technologies/video_element/
 ### Code
 https://github.com/soraya2/browser-technologies/blob/master/video_element/index.html
 
-### Support according to i use advise
+### Support according to i use 
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/ogg_format_support.jpg)
 
 ### Result in Chrome
@@ -132,7 +132,7 @@ https://soraya2.github.io/browser-technologies/picture_element/
 ### Code
 https://github.com/soraya2/browser-technologies/blob/master/picture_element/index.html
 
-### Support according to i use advise
+### Support according to i use 
 ![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/picture_support.jpg)
 
 ### Result in Chrome
