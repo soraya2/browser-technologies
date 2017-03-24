@@ -1,5 +1,5 @@
 #feature detection (progressive enhancement)
-all features are tested in the newest version of Chrome, Safari Firefox Opera and have a fallback for IE9.
+all features are tested in the newest version of Chrome, Safari Firefox Opera, opera Neon and have a fallback for IE9.
 I made sure that the user is able to see a simular experience on every browser.
 
 ## Table of contents
@@ -18,7 +18,7 @@ De styling starts with basic floats and if you support flexbox or css grid it wi
 ### Demo
 https://soraya2.github.io/browser-technologies/css_grid/
 
-### support according to i use advise
+### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/grid_support.jpg)
 
 ### basic styling with floats for IE9
@@ -39,7 +39,7 @@ De styling has a rgb fallback uses RGBA if it supports that through basic cascad
 ### Demo
 https://soraya2.github.io/browser-technologies/rrggbbaa/
 
-### support according to i use advise
+### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/rrggbbaa_support.jpg)
 
 ### Test result in IE9
@@ -60,7 +60,7 @@ If the browser accepts default parameters for example (b = 2) than the browser s
 ### Demo
 https://soraya2.github.io/browser-technologies/es6/
 
-### support according to i use advise
+### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/ed6arrow_support.jpg)
 
 
@@ -79,7 +79,7 @@ Remove child elements from the dom depending on if you support element.removeChi
 ### Demo
 https://soraya2.github.io/browser-technologies/remove_node/
 
-### support according to i use advise
+### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/childnode_remove_suport.jpg)
 
 ### Result in Chrome with element.removeChild(child)
@@ -96,7 +96,7 @@ Video element with mp4 fallback and uses ogg or webm format if its supported.
 ### Demo
 https://soraya2.github.io/browser-technologies/video_element/
 
-### support according to i use advise
+### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/ogg_format_support.jpg)
 
 ### Result in Chrome
@@ -114,7 +114,7 @@ Picture element with img fallback and uses webp format if it's suported.
 ### Demo
 https://soraya2.github.io/browser-technologies/picture_element/
 
-### support according to i use advise
+### Support according to i use advise
 ![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/picture_support.jpg)
 
 ### Result in Chrome
