@@ -16,10 +16,10 @@ I made sure that the user is able to see a simular experience on every browser.
 De styling starts with basic floats and if you support flexbox or css grid it will use that.
 
 ### Demo
-<a href="https://soraya2.github.io/browser-technologies/css_grid/">
+https://soraya2.github.io/browser-technologies/css_grid/
 
 ### Code
-<a href="https://github.com/soraya2/browser-technologies/blob/master/css_grid/index.html">
+https://github.com/soraya2/browser-technologies/blob/master/css_grid/index.html
 
 ### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/grid_support.jpg)
@@ -40,10 +40,10 @@ De styling starts with basic floats and if you support flexbox or css grid it wi
 De styling has a rgb fallback uses RGBA if it supports that through basic cascading.
 
 ### Demo
-<a href="https://soraya2.github.io/browser-technologies/rrggbbaa/">
+https://soraya2.github.io/browser-technologies/rrggbbaa/
 
 ### Code
-<a href="https://github.com/soraya2/browser-technologies/blob/master/rrggbbaa/index.html">
+https://github.com/soraya2/browser-technologies/blob/master/rrggbbaa/index.html
 
 ### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/rrggbbaa_support.jpg)
@@ -64,10 +64,10 @@ De styling has a rgb fallback uses RGBA if it supports that through basic cascad
 If the browser accepts default parameters for example (b = 2) than the browser supports es6 if the browser gives an error than it does not support it. Depending on the the result it loads in an es6 file or es5 file.
 
 ### Demo
-<a href="https://soraya2.github.io/browser-technologies/es6/">
+https://soraya2.github.io/browser-technologies/es6/
 
 ### Code
-<a href="https://github.com/soraya2/browser-technologies/blob/master/es6/index.html">
+https://github.com/soraya2/browser-technologies/blob/master/es6/index.html
 
 ### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/ed6arrow_support.jpg)
@@ -86,10 +86,10 @@ If the browser accepts default parameters for example (b = 2) than the browser s
 Remove child elements from the dom depending on if you support element.removeChild(child) or childNode.remove
 
 ### Demo
-<a href="https://soraya2.github.io/browser-technologies/remove_node/">
+https://soraya2.github.io/browser-technologies/remove_node/
 
 ### Code
-<a href="https://github.com/soraya2/browser-technologies/tree/master/remove_node">
+https://github.com/soraya2/browser-technologies/tree/master/remove_node
 
 ### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/childnode_remove_suport.jpg)
@@ -106,10 +106,11 @@ Remove child elements from the dom depending on if you support element.removeChi
 Video element with mp4 fallback and uses ogg or webm format if its supported.
 
 ### Demo
-<a href="https://soraya2.github.io/browser-technologies/video_element/">
+https://soraya2.github.io/browser-technologies/video_element/
 
 ### Code
-<a href="https://github.com/soraya2/browser-technologies/blob/master/video_element/index.html">
+https://github.com/soraya2/browser-technologies/blob/master/video_element/index.html
+
 ### Support according to i use advise
 ![CSS grid results](https://github.com/soraya2/browser-technologies/blob/master/screenshots/ogg_format_support.jpg)
 
@@ -126,10 +127,11 @@ Picture element with img fallback and uses webp format if it's suported.
 
 
 ### Demo
-<a href="https://soraya2.github.io/browser-technologies/picture_element/">
+https://soraya2.github.io/browser-technologies/picture_element/
 
 ### Code
-<a href="https://github.com/soraya2/browser-technologies/blob/master/picture_element/index.html">
+https://github.com/soraya2/browser-technologies/blob/master/picture_element/index.html
+
 ### Support according to i use advise
 ![alt tag](https://github.com/soraya2/browser-technologies/blob/master/screenshots/picture_support.jpg)
 
