@@ -1,4 +1,4 @@
-#feature detection (progressive enhancement)
+# feature detection (progressive enhancement)
 all features are tested in the newest version of Chrome, Safari Firefox Opera, opera Neon and have a fallback for IE9.
 I made sure that the user is able to see a simular experience on every browser.
 
